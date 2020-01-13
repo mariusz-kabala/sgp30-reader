@@ -77,6 +77,7 @@ def read_sensor():
     global elapsed_sec
     print("eCO2 = %d ppm \t TVOC = %d ppb" % (sgp30.eCO2, sgp30.TVOC))
     save_in_db()
+    publish_readings()
     elapsed_sec += 1
     if elapsed_sec > 10:
         elapsed_sec = 0
