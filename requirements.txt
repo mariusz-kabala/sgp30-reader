@@ -1,0 +1,4 @@
+influxdb
+paho-mqtt
+systemd
+adafruit-circuitpython-sgp30
